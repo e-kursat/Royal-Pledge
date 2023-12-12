@@ -14,6 +14,12 @@ Mekanik Linkleri:
 	• Checkpoint:
 		https://www.youtube.com/watch?v=VE_bkPrrZdE
 
+Unity Bilgileri:
+	
+	• Mouse Girdileri:
+		https://umitaslann.medium.com/unity-mouse-girdileri-input-getmousebutton-4070ad89963e
+
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Linkler:
