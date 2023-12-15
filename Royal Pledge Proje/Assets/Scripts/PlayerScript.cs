@@ -36,25 +36,23 @@ public class PlayerScript : MonoBehaviour
 
     private void Update()
     {
-        MovePlayer();
+        // set isGround
+        CheckGround();
         
-        // player jumping
-        // if (Input.GetButtonDown("Jump"))
-        // {
-        //     rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        // }
+        MovePlayer();
         
         // player jumping
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
-
         // player do attack
         if (Input.GetKeyDown(KeyCode.F))
         {
             Attack();
         }
+        
+        playerAnimator.SetBool("isGround", isGround);
     }
 
     private void Flip()
@@ -83,29 +81,11 @@ public class PlayerScript : MonoBehaviour
 
     private void Jump()
     {
-        // detect grounds
-        isGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRange, groundLayer);
-
         if (isGround)
         {
-            print("isGround: " + isGround);
-            
-            playerAnimator.SetBool("isJump", true);
-            
             // player is jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-        else
-        {
-            print("isGround: " + isGround);
-            
-            playerAnimator.SetBool("isJump", false);
-        }
-        
-        // foreach (Collider2D ground in isGround)
-        // {
-        //     print("is ground." + ground.name);
-        // }
     }
 
     private void Attack()
@@ -124,13 +104,18 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void CheckGround()
+    {
+        // detect grounds
+        isGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRange, groundLayer);
+    }
+
     private void OnDrawGizmosSelected()
     {
         if (attackPoint == null || groundCheck == null)
             return;
         
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
-        
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRange);
     }
 }
