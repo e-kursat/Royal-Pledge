@@ -7,6 +7,8 @@ sahneye animasyon ekle. (sular hareket etsin)
 
 öldüğün zaman jojo to be continued hem müzik hem tema
 
+fikir: kahraman, varisi kuleye tırmanarak kurtarsın?
+
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Mekanik Linkleri:
@@ -14,10 +16,26 @@ Mekanik Linkleri:
 	• Checkpoint:
 		https://www.youtube.com/watch?v=VE_bkPrrZdE
 
+	• Attack:
+		https://www.youtube.com/watch?v=sPiVz1k-fEs
+
+	• Boss:
+		https://www.youtube.com/watch?v=AD4JIXQDw0s
+
 Unity Bilgileri:
 	
 	• Mouse Girdileri:
 		https://umitaslann.medium.com/unity-mouse-girdileri-input-getmousebutton-4070ad89963e
+
+	• 2D Oyun Yapma Eğitimi (Brackeys):
+		https://www.youtube.com/watch?v=on9nwbZngyw&list=PLPV2KyIb3jR6TFcFuzI2bB7TMNIIBpKMQw
+
+	• 2D Savaşçı Oyunu Eğitimi:
+		https://www.youtube.com/watch?v=jEtUG2rVx84&list=PLnanKIXWfsieWvMXwGF2TWwYYYWYHPaNC&index=5
+
+	• Animasyon Eğitimi:
+		Platform hareket ettirme: 
+			https://www.youtube.com/watch?v=zBZrIk2_1QU
 
 
 --------------------------------------------------------------------------------------------------------------------------------------
@@ -30,8 +48,7 @@ Linkler:
 			https://zegley.itch.io/2d-platformermetroidvania-asset-pack
 
 		Kadın şövalye:
-			kadın şövalye: https://jumpbutton.itch.io/girlknightasset
-
+			https://jumpbutton.itch.io/girlknightasset
 
 	• Paket:
 			https://assetstore.unity.com/packages/2d/free-2d-mega-pack-177430
@@ -62,6 +79,9 @@ Linkler:
 
 	• Yetenek:
 		https://assetstore.unity.com/packages/2d/textures-materials/abstract/warped-shooting-fx-195246
+
+	• Effect:
+		Explosion: https://craftpix.net/freebies/free-animated-explosion-sprite-pack/
 
 	• UI: 
 		Karakter Can ve Enerji Barı 1: 

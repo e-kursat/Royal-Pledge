@@ -12,7 +12,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{cb584e7b-1669-6425-3fed-6479bd6bdda3}</ProjectGuid>
+    <ProjectGuid>{b05a9373-e13c-e8a8-5487-639d5a670fc5}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -45,71 +45,71 @@
     <Analyzer Include="C:\Program Files\Unity 2023.1.16f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions\EnumExtensions.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\ProcessorUtil.cs" />
-     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ChestEditor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyGroupProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\LabelTextAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GroupAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HideLabelAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorField.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorPropertyGroup.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorProperty.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\TitleHeaderAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableInEditModeAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorGUILayout.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ReadOnlyAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\SerializeReferenceDropdown.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\EnableIfAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\EditableInspectorProperty.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidGUIEvent.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorPrefs.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ShowIfAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorButton.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\SerializedPropertyUtility.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\BoxGroupAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\SimpleTreeView.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions\SerializedPropertyExtensions.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\TypeUtil.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ValidateInputAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HorizontalLineAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HorizontalGroupAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HelpBoxAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorUtility.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\InspectorPropertyUtil.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\IndentAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\OnValueChangedAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\AssetsOnlyAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\Toolbar.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\EditorIcons.cs" />
-     <Compile Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ElevatorEditor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\FoldoutGroupAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\ReflectionUtil.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableInPlayModeAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\TextFieldPopup.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\EditorColors.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HideIfAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\TreeMenu.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorGUI.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GUIColorAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableIfAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\RequiredAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\NonSerializedProperty.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HelpBoxIfAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\BlockquoteAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\PropertyOrderAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\LabelWidthAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\SectionHeaderAttributeProcessor.cs" />
-     <Compile Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\TabGroupAttributeProcessor.cs" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty" />
-     <Folder Include="Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor" />
-     <Folder Include="Assets\Cainos\Third Party\Lucid Editor\Editor\Utils" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorButton.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableInEditModeAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\TypeUtil.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\NonSerializedProperty.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidGUIEvent.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\EditorColors.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HorizontalLineAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorProperty.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorField.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\ProcessorUtil.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\ReflectionUtil.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\EnableIfAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorGUI.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ChestEditor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions\EnumExtensions.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\SimpleTreeView.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyGroupProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\PropertyOrderAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\TextFieldPopup.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\PropertyProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\SerializedPropertyUtility.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorPrefs.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ValidateInputAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorGUILayout.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\RequiredAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\LabelWidthAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GroupAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\BlockquoteAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\BoxGroupAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\TitleHeaderAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor\ElevatorEditor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\EditorIcons.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\LabelTextAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\GUIColorAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HorizontalGroupAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HideLabelAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableInPlayModeAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\FoldoutGroupAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\OnValueChangedAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\SerializeReferenceDropdown.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions\SerializedPropertyExtensions.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\InspectorPropertyGroup.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\TreeMenu.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental\Toolbar.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\AssetsOnlyAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HideIfAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Utils\InspectorPropertyUtil.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HelpBoxAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\LucidEditorUtility.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\TabGroupAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\IndentAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ShowIfAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\DisableIfAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\HelpBoxIfAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\SectionHeaderAttributeProcessor.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty\EditableInspectorProperty.cs" />
+     <Compile Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes\ReadOnlyAttributeProcessor.cs" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Experimental" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Extensions" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\InspectorProperty" />
+     <Folder Include="Assets\Package Assets\Cainos\Pixel Art Platformer - Village Props\Script\Editor" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Attributes" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor" />
+     <Folder Include="Assets\Package Assets\Cainos\Third Party\Lucid Editor\Editor\Utils" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity 2023.1.16f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -387,34 +387,34 @@
      <HintPath>C:\Program Files\Unity 2023.1.16f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.YamlDotNet">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections.LowLevel.ILSupport">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.ext.nunit@2.0.3\net40\unity-custom\nunit.framework.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Antlr3.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="unityplastic">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
      <Reference Include="log4netPlastic">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.collab-proxy@2.2.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.IonicZip">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.visualscripting@1.8.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.TextureAssets">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
      </Reference>
      <Reference Include="mscorlib">
      <HintPath>C:\Program Files\Unity 2023.1.16f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\mscorlib.dll</HintPath>
@@ -792,147 +792,147 @@
      <HintPath>C:\Program Files\Unity 2023.1.16f1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.TestRunner">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.TestRunner">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Aseprite.Common">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Animation.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Rider.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Extras.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
      </Reference>
      <Reference Include="PsdPlugin">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Shared.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Path.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.TextMeshPro">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.UI">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.IK.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Tilemap.Extras">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Common.Runtime">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Timeline">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.PlasticSCM.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Aseprite.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.State">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.SpriteShape.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Mathematics.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Sprite.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.UI">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.005">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Psdimporter.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEditorBridge.001">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.Animation.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Collections">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.PixelPerfect">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Burst">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualStudio.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.2D.PixelPerfect.Editor">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Flow">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
      </Reference>
      <Reference Include="Unity.VisualScripting.Core">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
      </Reference>
      <Reference Include="Unity.InternalAPIEngineBridge.001">
-     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     <HintPath>C:\Users\KÜRŞAT\Desktop\Ana Klasörler\Ana Klasörler\Projeler\RoyalPledge\Royal Pledge Proje\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{da465919-31ab-9206-4275-86055b795dcc}</Project>
+      <Project>{29707957-75c4-962d-81a5-8188a94b1807}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
