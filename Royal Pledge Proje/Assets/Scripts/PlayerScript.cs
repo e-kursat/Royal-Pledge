@@ -5,20 +5,22 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+    private Rigidbody2D rb;
+    private Animator playerAnimator;
+    
     // player run speed
     public float speed = 5f;
     
     // player jump force
     public float jumpForce = 12.2f;
+    public int jumpLimit = 2;
+    private int jumpCounter;
     
     // attack variables
     public int attackDamage = 50;
     public Transform attackPoint;
     public float attackRange = 0.9f;
     public LayerMask enemyLayers;
-    
-    private Rigidbody2D rb;
-    private Animator playerAnimator;
     
     // player is ground check variables
     public Transform groundCheck;
@@ -83,8 +85,20 @@ public class PlayerScript : MonoBehaviour
     {
         if (isGround)
         {
+            jumpCounter = 0;
+            
             // player is jump
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+
+            jumpCounter += 1;
+        }
+        else
+        {
+            if (jumpCounter < jumpLimit)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                jumpCounter += 1;
+            }
         }
     }
 
