@@ -51,5 +51,6 @@ public class EnemyController : MonoBehaviour
         this.enabled = false;
         
         Destroy(gameObject, deathAnimationDuration);
+
     }
 }

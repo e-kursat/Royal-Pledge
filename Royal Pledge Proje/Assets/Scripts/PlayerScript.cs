@@ -56,27 +56,6 @@ public class PlayerScript : MonoBehaviour
         {
             Jump();
         }
-
-        // if (isCeil)
-        // {
-        //     Crouch();
-        // }
-        // else
-        // {
-        //     // player crouching
-        //     if (Input.GetKeyDown(KeyCode.DownArrow))
-        //     {
-        //         Crouch();
-        //     }
-        //     // else if (Input.GetKeyUp(KeyCode.DownArrow))
-        //     // {
-        //     //     isCrouching = false;
-        //     // }
-        //     // else
-        //     // {
-        //     //     isCrouching = false;
-        //     // }
-        // }
         
         // player crouching
         if (Input.GetKeyDown(KeyCode.DownArrow))
@@ -97,19 +76,6 @@ public class PlayerScript : MonoBehaviour
                 }
             }
         }
-        
-        // else if (Input.GetKeyUp(KeyCode.DownArrow))
-        // {
-        //     if (isCeil)
-        //     {
-        //         // isCrouching = true;
-        //         Crouch();
-        //     }
-        //     else
-        //     {
-        //         isCrouching = false;
-        //     }
-        // }
 
         // player do attack
         if (Input.GetKeyDown(KeyCode.F))
@@ -137,7 +103,7 @@ public class PlayerScript : MonoBehaviour
         
         // play run animation
         playerAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
-
+        
         // player face direction
         if ((horizontalInput > 0 && !facingRight) || (horizontalInput < 0 && facingRight))
         {
