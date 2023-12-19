@@ -26,7 +26,12 @@ public class PlayerScript : MonoBehaviour
     public Transform groundCheck;
     public float groundCheckRange = 0.2f;
     public LayerMask groundLayer;
-    private bool isGround;
+    public bool isGround;
+
+    // crouch variables
+    public Transform ceilPoint;
+    private bool isCeil;
+    public bool isCrouching;
     
     private bool facingRight = true;
 
@@ -41,6 +46,9 @@ public class PlayerScript : MonoBehaviour
         // set isGround
         CheckGround();
         
+        // set isCeil
+        CheckCeil();
+        
         MovePlayer();
         
         // player jumping
@@ -48,6 +56,61 @@ public class PlayerScript : MonoBehaviour
         {
             Jump();
         }
+
+        // if (isCeil)
+        // {
+        //     Crouch();
+        // }
+        // else
+        // {
+        //     // player crouching
+        //     if (Input.GetKeyDown(KeyCode.DownArrow))
+        //     {
+        //         Crouch();
+        //     }
+        //     // else if (Input.GetKeyUp(KeyCode.DownArrow))
+        //     // {
+        //     //     isCrouching = false;
+        //     // }
+        //     // else
+        //     // {
+        //     //     isCrouching = false;
+        //     // }
+        // }
+        
+        // player crouching
+        if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            Crouch();
+        }
+        else
+        {
+            if (isCeil)
+            {
+                Crouch();
+            }
+            else
+            {
+                if (Input.GetKeyUp(KeyCode.DownArrow))
+                {
+                    isCrouching = false;
+                }
+            }
+        }
+        
+        // else if (Input.GetKeyUp(KeyCode.DownArrow))
+        // {
+        //     if (isCeil)
+        //     {
+        //         // isCrouching = true;
+        //         Crouch();
+        //     }
+        //     else
+        //     {
+        //         isCrouching = false;
+        //     }
+        // }
+
         // player do attack
         if (Input.GetKeyDown(KeyCode.F))
         {
@@ -55,6 +118,7 @@ public class PlayerScript : MonoBehaviour
         }
         
         playerAnimator.SetBool("isGround", isGround);
+        playerAnimator.SetBool("isCrouching", isCrouching);
     }
 
     private void Flip()
@@ -102,6 +166,19 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
+    private void Crouch()
+    {
+        if (isGround)
+        {
+            print("Crouch!");
+            isCrouching = true;
+        }
+        else
+        {
+            isCrouching = false;
+        }
+    }
+
     private void Attack()
     {
         // play attack animation
@@ -123,13 +200,21 @@ public class PlayerScript : MonoBehaviour
         // detect grounds
         isGround = Physics2D.OverlapCircle(groundCheck.position, groundCheckRange, groundLayer);
     }
+    
+    private void CheckCeil()
+    {
+        // detect grounds
+        isCeil = Physics2D.OverlapCircle(ceilPoint.position, groundCheckRange, groundLayer);
+    }
 
     private void OnDrawGizmosSelected()
     {
-        if (attackPoint == null || groundCheck == null)
+        if (attackPoint == null || groundCheck == null || ceilPoint == null)
             return;
         
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRange);
+        
+        Gizmos.DrawWireSphere(ceilPoint.position, groundCheckRange);
     }
 }

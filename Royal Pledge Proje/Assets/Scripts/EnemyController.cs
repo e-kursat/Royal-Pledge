@@ -7,10 +7,14 @@ public class EnemyController : MonoBehaviour
 {
     public Animator enemyAnimator;
     
+    // enemy health
     public int maxEnemyHealth = 100;
+    
+    // enemy's current health
     private int currentEnemyHealth;
 
-    public float deathAnimationTime = 1f;
+    // enemy death animation duration
+    public float deathAnimationDuration = 1f;
     
     // Start is called before the first frame update
     void Start()
@@ -46,6 +50,6 @@ public class EnemyController : MonoBehaviour
         GetComponent<Collider2D>().enabled = false;
         this.enabled = false;
         
-        Destroy(gameObject, deathAnimationTime);
+        Destroy(gameObject, deathAnimationDuration);
     }
 }
