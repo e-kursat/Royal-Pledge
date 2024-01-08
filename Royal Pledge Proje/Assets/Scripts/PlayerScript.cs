@@ -65,39 +65,12 @@ public class PlayerScript : MonoBehaviour
         // set isGround
         CheckGround();
         
-        // set isCeil
-        CheckCeil();
-        
         // MovePlayer();
         
         // player jumping
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
-        }
-        
-        // player crouching
-        if (Input.GetKeyDown(KeyCode.DownArrow) || isCeil)
-        {
-            Crouch();
-        }
-        else
-        {
-            if (isCeil)
-            {
-                Crouch();
-            }
-            else
-            {
-                if (Input.GetKeyDown(KeyCode.DownArrow))
-                {
-                    Crouch();
-                }
-                if (Input.GetKeyUp(KeyCode.DownArrow))
-                {
-                    isCrouching = false;
-                }
-            }
         }
 
         // print("Time: " + Time.time);
@@ -109,19 +82,44 @@ public class PlayerScript : MonoBehaviour
                 //print("-----------------Time: " + Time.time);
                 Attack();
                 
-                //
                 nextAttackTime = Time.time + 1f / attackRate;
                 //print("Next Attack Time: " + nextAttackTime);
             }
         }
 
         playerAnimator.SetBool("isGround", isGround);
-        playerAnimator.SetBool("isCrouching", isCrouching);
     }
 
     private void FixedUpdate()
     {
         MovePlayer();
+
+        // set isCeil
+        CheckCeil();
+        
+        // hold up down arrow and crouch
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            Crouch();
+        }
+        
+        // if hold up down arrow
+        else
+        {
+            // if have a ceil
+            if (isCeil)
+            {
+                Crouch();
+            }
+            
+            // if not have a ceil
+            else
+            {
+                isCrouching = false;
+            }
+        }
+        
+        playerAnimator.SetBool("isCrouching", isCrouching);
     }
 
     private void Flip()
@@ -186,7 +184,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (isGround)
         {
-            print("Crouch!");
+            //print("Crouch!");
             isCrouching = true;
         }
         else
@@ -200,15 +198,28 @@ public class PlayerScript : MonoBehaviour
         // play attack animation
         playerAnimator.SetTrigger("Attack");
 
-        // detect enemies
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        // // detect enemies
+        // Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //
+        // // Damage enemies
+        // foreach (Collider2D Enemy in hitEnemies)
+        // {
+        //     // print("Hit " + Enemy.name);
+        //    Enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
+        // }
+    }
 
-        // Damage enemies
-        foreach (Collider2D Enemy in hitEnemies)
-        {
-            print("Hit " + Enemy.name);
-            Enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
-        }
+    private void GetDamage()
+    {
+       // detect enemies
+       Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+       // Damage enemies
+       foreach (Collider2D Enemy in hitEnemies)
+       { 
+           print("Hit " + Enemy.name);
+           Enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
+       }  
     }
 
     private void CheckGround()
