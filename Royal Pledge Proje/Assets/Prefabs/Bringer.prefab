@@ -200,7 +200,10 @@ MonoBehaviour:
   enemyAnimator: {fileID: 2991187715315331966}
   maxEnemyHealth: 100
   currentEnemyHealth: 0
-  deathAnimationDuration: 1
+  deathAnimationDuration: 1.2
+  components:
+  - {fileID: 2340212143414167432}
+  - {fileID: 4437587047920710006}
 --- !u!114 &2340212143414167432
 MonoBehaviour:
   m_ObjectHideFlags: 0
