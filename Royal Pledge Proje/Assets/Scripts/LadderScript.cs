@@ -10,7 +10,14 @@ public class Ladder : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
 
+    private Animator playerAnimator;
+
     [SerializeField] private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        playerAnimator = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -18,8 +25,8 @@ public class Ladder : MonoBehaviour
 
         if (isLadder && Mathf.Abs(vertical) > 0f)
         {
+            playerAnimator.SetBool("isClimbing", true);
             isClimbing = true;
-            
         }
     }
 
@@ -38,7 +45,8 @@ public class Ladder : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.GetType().ToString().Equals("UnityEngine.BoxCollider2D"))
+        if (collision != null && collision is BoxCollider2D)
+        //if (collision.GetType().ToString().Equals("UnityEngine.CapsuleCollider2D"))
         {
             if (collision.CompareTag("Ladder"))
             {
@@ -53,6 +61,7 @@ public class Ladder : MonoBehaviour
     {
         if (collision.CompareTag("Ladder"))
         {
+            playerAnimator.SetBool("isClimbing", false);
             isLadder = false;
             isClimbing = false;
             print("trigger false!");

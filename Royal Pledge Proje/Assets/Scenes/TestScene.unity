@@ -690,16 +690,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c40d056c97871d4ab8c124cd1b72c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftEdge: {fileID: 1939594405}
-  rightEdge: {fileID: 818094336}
+  leftEdge: {fileID: 6738740992649381357}
+  rightEdge: {fileID: 3456114281080220911}
   enemy: {fileID: 848135614}
   speed: 1
   idleDuration: 0
---- !u!4 &818094336 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 493668084343513384, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
-  m_PrefabInstance: {fileID: 2967671086865370567}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &848135614 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3125283477912128878, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
@@ -2034,8 +2029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c40d056c97871d4ab8c124cd1b72c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftEdge: {fileID: 1939594405}
-  rightEdge: {fileID: 818094336}
+  leftEdge: {fileID: 6738740992649381357}
+  rightEdge: {fileID: 3456114281080220911}
   enemy: {fileID: 1111216233}
   speed: 1
   idleDuration: 0
@@ -2589,11 +2584,6 @@ MonoBehaviour:
   isGround: 0
   ceilPoint: {fileID: 0}
   isCrouching: 0
---- !u!4 &1939594405 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8406980375224780842, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
-  m_PrefabInstance: {fileID: 2967671086865370567}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1974766440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4732850624377985433, guid: f4bb233a4b0fd8a41a13258dcb811483, type: 3}
@@ -3305,6 +3295,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
+--- !u!4 &3456114281080220911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 493668084343513384, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
+  m_PrefabInstance: {fileID: 2967671086865370567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &4831956090185166639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3372,6 +3367,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &6738740992649381357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8406980375224780842, guid: e82aa88ad2144314585ddbf26a666289, type: 3}
+  m_PrefabInstance: {fileID: 2967671086865370567}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6914833267278427328
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,6 +3463,7 @@ SceneRoots:
   - {fileID: 2033179898}
   - {fileID: 526550332}
   - {fileID: 1402371509}
+  - {fileID: 44835387689660220}
   - {fileID: 519420032}
   - {fileID: 6973341098795043349}
   - {fileID: 5980853378066603225}
@@ -3472,4 +3473,3 @@ SceneRoots:
   - {fileID: 291214111}
   - {fileID: 1867898178}
   - {fileID: 2107538496}
-  - {fileID: 44835387689660220}
