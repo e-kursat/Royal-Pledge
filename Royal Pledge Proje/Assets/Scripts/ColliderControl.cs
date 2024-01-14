@@ -28,7 +28,7 @@ public class ColliderControl : MonoBehaviour
         {
             standCollider.enabled = true;
             crouchCollider.enabled = false;
-            circleCollider.enabled = false;
+            circleCollider.enabled = true;
         }
         else
         {
