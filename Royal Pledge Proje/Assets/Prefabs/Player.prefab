@@ -337,6 +337,8 @@ MonoBehaviour:
   maxPlayerHealth: 100
   currentPlayerHealth: 0
   deathAnimationDuration: 1
+  components:
+  - {fileID: 5545319866280690978}
 --- !u!114 &4018789403809119681
 MonoBehaviour:
   m_ObjectHideFlags: 0

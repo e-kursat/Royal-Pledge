@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
@@ -77,7 +78,7 @@ public class PlayerScript : MonoBehaviour
         if (Time.time >= nextAttackTime)
         {
             // player do attack
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F) && !isCrouching)
             {
                 //print("-----------------Time: " + Time.time);
                 Attack();
@@ -132,22 +133,22 @@ public class PlayerScript : MonoBehaviour
 
     private void MovePlayer()
     {
-        // // player movement
-        // float horizontalInput = Input.GetAxis("Horizontal");
-        // rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-
-        # region Advanced Movement for Forces
-        
+        // player movement
         float horizontalInput = Input.GetAxis("Horizontal");
-        
-        float targetSpeed = horizontalInput * speed;
-        float speedDif = targetSpeed - rb.velocity.x;
-        float accelRate = (Math.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
-        
-        float movement = (float)(Math.Pow(Math.Abs(speedDif) * accelRate, velPower) * Math.Sign(speedDif));
-        rb.AddForce(movement * Vector2.right);
+        rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
 
-        #endregion
+        // # region Advanced Movement for Forces
+        //
+        // float horizontalInput = Input.GetAxis("Horizontal");
+        //
+        // float targetSpeed = horizontalInput * speed;
+        // float speedDif = targetSpeed - rb.velocity.x;
+        // float accelRate = (Math.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
+        //
+        // float movement = (float)(Math.Pow(Math.Abs(speedDif) * accelRate, velPower) * Math.Sign(speedDif));
+        // rb.AddForce(movement * Vector2.right);
+        //
+        // #endregion
         
         // play run animation
         playerAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
@@ -184,7 +185,6 @@ public class PlayerScript : MonoBehaviour
     {
         if (isGround)
         {
-            //print("Crouch!");
             isCrouching = true;
         }
         else
