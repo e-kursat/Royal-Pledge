@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     // enemy animator
     public Animator enemyAnimator;
