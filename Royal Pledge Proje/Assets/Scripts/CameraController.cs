@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour
     public float offset;
     public float offsetSmoothing;
     private Vector3 playerPosition;
+
+    public Vector3 minValues, maxValues;
     
     // Start is called before the first frame update
     void Start()
@@ -20,12 +22,9 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // transform.position = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
-        
         // playerPosition = new Vector3(player.transform.position.x, transform.position.y, transform.position.z);
         playerPosition = new Vector3(player.transform.position.x, player.transform.position.y, transform.position.z);
-
-        
+         
         // player looks right
         if (player.transform.localScale.x > 0f)
         {
@@ -36,7 +35,13 @@ public class CameraController : MonoBehaviour
         {
             playerPosition = new Vector3(playerPosition.x - offset, playerPosition.y, playerPosition.z);
         }
-
-        transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
+        
+        Vector3 boundPosition = new Vector3(
+            Mathf.Clamp(playerPosition.x, minValues.x, maxValues.x),
+            Mathf.Clamp(playerPosition.y, minValues.y, maxValues.y),
+            Mathf.Clamp(playerPosition.z, minValues.z, maxValues.z));
+        
+        transform.position = Vector3.Lerp(transform.position, boundPosition, offsetSmoothing * Time.deltaTime);
+        // transform.position = Vector3.Lerp(transform.position, playerPosition, offsetSmoothing * Time.deltaTime);
     }
 }
