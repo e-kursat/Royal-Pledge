@@ -209,7 +209,7 @@ public class PlayerScript : MonoBehaviour
         // }
     }
 
-    private void GetDamage()
+    private void GiveDamage()
     {
        // detect enemies
        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -218,7 +218,7 @@ public class PlayerScript : MonoBehaviour
        foreach (Collider2D Enemy in hitEnemies)
        { 
            print("Hit " + Enemy.name);
-           Enemy.GetComponent<EnemyController>().TakeDamage(attackDamage);
+           Enemy.GetComponent<EnemyManager>().TakeDamage(attackDamage);
        }  
     }
 
