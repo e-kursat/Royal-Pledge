@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 public class EnemyManager : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class EnemyManager : MonoBehaviour
 
     // enemy death animation duration
     public float deathAnimationDuration = 1f;
+
+    public GameObject popUpDamage;
+    private TextMeshPro popUpText;
     
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
@@ -24,6 +28,8 @@ public class EnemyManager : MonoBehaviour
     {
         // set enemy animator
         enemyAnimator = GetComponent<Animator>();
+        
+        popUpText = popUpDamage.transform.GetChild(0).GetComponent<TextMeshPro>();
         
         // set first current animator
         currentEnemyHealth = maxEnemyHealth;
@@ -41,6 +47,11 @@ public class EnemyManager : MonoBehaviour
         
         // play hurt animation
         enemyAnimator.SetTrigger("Hurt");
+
+        print("damage: " + damageValue.ToString());
+        
+        popUpText.SetText(damageValue.ToString());
+        Instantiate(popUpDamage, transform.position, Quaternion.identity);
         
         if (currentEnemyHealth <= 0)
         {
@@ -55,11 +66,6 @@ public class EnemyManager : MonoBehaviour
         
         // play death animation
         enemyAnimator.SetBool("isDeath", true);
-        
-        // disabled the enemy collider
-        //GetComponent<Collider2D>().enabled = false;
-        // disabled the character
-        //this.enabled = false;
         
         // disabled the enemy collider
         GetComponent<Collider2D>().enabled = false;

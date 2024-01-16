@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -16,28 +18,84 @@ public class PlayerManager : MonoBehaviour
     // player death animation duration
     public float deathAnimationDuration = 1f;
     
+    public HealthBar healthBar;
+    
+    public GameObject popUpDamage;
+    private TextMeshPro popUpText;
+    
     [Header("Components")]
     [SerializeField] private Behaviour[] components;
     
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         // set player animator
         playerAnimator = GetComponent<Animator>();
+    }
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        popUpText = popUpDamage.transform.GetChild(0).GetComponent<TextMeshPro>();
+        // set max health for health bar
+        healthBar.SetMaxHealth(maxPlayerHealth);
         
-        // set first current animator
+        // set first current health
         currentPlayerHealth = maxPlayerHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            currentPlayerHealth += 20;
+        }
         
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            currentPlayerHealth -= 20;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            currentPlayerHealth = 0;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            currentPlayerHealth = 100;
+        }
+        
+        healthBar.SetHealth(currentPlayerHealth);
     }
 
+    private float totalDamage = 0;
+        
     public void TakeDamage(float damageValue)
     {
         currentPlayerHealth -= damageValue;
+        
+        healthBar.SetHealth(currentPlayerHealth);
+        
+        if (damageValue > 10)
+        {
+            popUpText.SetText(damageValue.ToString());
+            Instantiate(popUpDamage, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            if (totalDamage >= 10)
+            {
+                popUpText.SetText(10.ToString());
+                Instantiate(popUpDamage, transform.position, Quaternion.identity);
+                
+                totalDamage = 0;
+            }
+            else
+            {
+                totalDamage += damageValue;
+            }
+        }
         
         // play hurt animation
         playerAnimator.SetTrigger("Hurt");
