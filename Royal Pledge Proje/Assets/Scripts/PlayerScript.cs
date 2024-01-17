@@ -6,8 +6,11 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviour
 {
+
     private Rigidbody2D rb;
     private Animator playerAnimator;
+    [SerializeField] private AudioSource attackSoundEffect;
+    [SerializeField] private AudioSource jumpSoundEffect;
 
     [Header("Movement")]
     // player run speed
@@ -144,6 +147,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (isGround)
         {
+            jumpSoundEffect.Play();
             jumpCounter = 0;
             
             // player is jump
@@ -155,6 +159,7 @@ public class PlayerScript : MonoBehaviour
         {
             if (jumpCounter < jumpLimit)
             {
+                jumpSoundEffect.Play();
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce);
                 jumpCounter += 1;
             }
@@ -177,6 +182,7 @@ public class PlayerScript : MonoBehaviour
     {
         // play attack animation
         playerAnimator.SetTrigger("Attack");
+        attackSoundEffect.Play();
 
         // // detect enemies
         // Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);

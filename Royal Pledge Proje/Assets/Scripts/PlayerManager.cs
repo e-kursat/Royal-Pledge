@@ -7,6 +7,7 @@ using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] private AudioSource hurtSoundEffect;
     // player animator
     public Animator playerAnimator;
     
@@ -78,6 +79,7 @@ public class PlayerManager : MonoBehaviour
         healthBar.SetHealth(currentPlayerHealth);
         
         if (damageValue > 10)
+            hurtSoundEffect.Play();
         {
             popUpText.SetText(damageValue.ToString());
             Instantiate(popUpDamage, transform.position, Quaternion.identity);
