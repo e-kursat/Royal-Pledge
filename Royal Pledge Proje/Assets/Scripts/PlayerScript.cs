@@ -13,13 +13,6 @@ public class PlayerScript : MonoBehaviour
     // player run speed
     public float speed = 5f;
     
-    [Space(5)]
-    public float acceleration = 7f;
-    public float deceleration = 7f;
-    
-    [Space(5)]
-    public float velPower = 0.9f;
-    
     [Space(20)]
     
     // player jump force
@@ -136,19 +129,6 @@ public class PlayerScript : MonoBehaviour
         // player movement
         float horizontalInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-
-        // # region Advanced Movement for Forces
-        //
-        // float horizontalInput = Input.GetAxis("Horizontal");
-        //
-        // float targetSpeed = horizontalInput * speed;
-        // float speedDif = targetSpeed - rb.velocity.x;
-        // float accelRate = (Math.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
-        //
-        // float movement = (float)(Math.Pow(Math.Abs(speedDif) * accelRate, velPower) * Math.Sign(speedDif));
-        // rb.AddForce(movement * Vector2.right);
-        //
-        // #endregion
         
         // play run animation
         playerAnimator.SetFloat("speed", Mathf.Abs(rb.velocity.x));
@@ -230,7 +210,7 @@ public class PlayerScript : MonoBehaviour
     
     private void CheckCeil()
     {
-        // detect grounds
+        // detect ceil
         isCeil = Physics2D.OverlapCircle(ceilPoint.position, groundCheckRange, groundLayer);
     }
 

@@ -54,7 +54,6 @@ public class Ladder : MonoBehaviour
                 print("trigger!");
             }
         }
-
     }
 
     private void OnTriggerExit2D(Collider2D collision)
