@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -32,6 +33,18 @@ namespace Cainos.PixelArtPlatformer_VillageProps
         public void Close()
         {
             IsOpened = false;
+        }
+        
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                // press e and open or close chest
+                if (!IsOpened)
+                    Open();
+                else
+                    Close();
+            }
         }
     }
 }

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ee9413e54dc2d46d4b0ae97e3c29f5a1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257819
+  packageName: Replica Studios AI Voice Actors for Unity
+  packageVersion: 2023.6.16
+  assetPath: Assets/Replica Studios Link/Menu/ReplicaMenu.cs
+  uploadId: 594925

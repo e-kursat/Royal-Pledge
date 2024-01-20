@@ -201,6 +201,7 @@ MonoBehaviour:
   maxEnemyHealth: 100
   currentEnemyHealth: 0
   deathAnimationDuration: 1.2
+  popUpDamage: {fileID: 4741248941204062029, guid: a4164015d341b5448a05a366ac84bf37, type: 3}
   components:
   - {fileID: 8688150073714099884}
   - {fileID: 5027556576342803459}
