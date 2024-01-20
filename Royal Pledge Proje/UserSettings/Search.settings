@@ -8,6 +8,20 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"picker_window_position_offset.0B486DF2" = "43;401;320;550"
+	"picker_search_text.0B486DF2" = ""
+	"last_search.0B486DF2" = ""
+	"OpenInspectorPreview.0B486DF2" = "0"
+	"currentGroup.0B486DF2" = null
+	"last_search.2567E822" = ""
+	"OpenInspectorPreview.2567E822" = "0"
+	"currentGroup.2567E822" = "all"
+	"last_search.8DF93126" = " t:Texture2D"
+	"OpenInspectorPreview.8DF93126" = "0"
+	"currentGroup.8DF93126" = "asset"
+	"last_search.98CF4AA6" = ""
+	"OpenInspectorPreview.98CF4AA6" = "0"
+	"currentGroup.98CF4AA6" = "scene"
 }
 providers = {
 	performance = {
@@ -64,6 +78,8 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	""
+	"leaked"
 ]
 searchItemFavorites = [
 ]

@@ -6,7 +6,22 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu Scene.unity
+    guid: f545e1a4931abb841ae7d45f9f2ada0e
+  - enabled: 1
+    path: Assets/Scenes/King Room.unity
+    guid: 35f12e26cbef7db46a4b084f6e02bf80
+  - enabled: 1
+    path: Assets/Scenes/Town Scene.unity
+    guid: 0b66e374bd4ceff459689cb59672a87d
+  - enabled: 1
+    path: Assets/Scenes/Church Scene.unity
+    guid: cf0eea7002e545146b1f42b7ee501a73
+  - enabled: 1
+    path: Assets/Scenes/Cave Scene.unity
+    guid: c0fa180629f2abe45b37c37db508bb68
+  - enabled: 1
+    path: Assets/Scenes/Boss Scene.unity
+    guid: af5058f546ba50444a11c70a50f13cd0
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
